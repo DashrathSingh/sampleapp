@@ -1,0 +1,41 @@
+﻿
+ <link href="css/app.css" rel="stylesheet" type="text/css">
+
+
+<div data-ng-if="Isauthorize == 'true'" class="container">
+    <h1>Setting page</h1>
+<hr />
+	<div class="row">
+		<div class="col-xs-12">
+		    <h3 class="text-center">Reset Password</h3>
+		    <hr/>
+		    <form>
+		        <div class="form-group">
+		            <label>Enter Email id :</label>
+		            <input type="text" class="form-control"/>
+		        </div>
+		         <div class="form-group">
+		            <label>Change Password :</label>
+		            <input type="password" class="form-control"/>
+		        </div>
+		         <div class="form-group">
+		            <label>COnfirm Password :</label>
+		            <input type="password" class="form-control"/>
+		        </div>
+		        <button class="btn btn-primary btn-sm center-block">
+		            Submit
+		        </button>
+		    </form>
+		</div>
+	</div>
+</div>
+
+<div data-ng-if="Isauthorize != 'true'" class="container">
+     <div class="well">
+
+         <h1>Sorry</h1>
+         <h2>You are not authorize to access this page</h2>
+
+     </div>
+
+     </div>
